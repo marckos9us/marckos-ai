@@ -1,19 +1,43 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>ماركوس AI</title>
-  <style>
-    body { font-family: sans-serif; background: #f9f9f9; padding: 20px; text-align: center; }
-    input, button { padding: 10px; margin: 10px; width: 80%; font-size: 16px; }
-    #response { white-space: pre-wrap; background: #fff; padding: 20px; border-radius: 8px; margin-top: 20px; min-height: 100px; box-shadow: 0 0 10px #ccc; }
-  </style>
+    <meta charset="UTF-8">
+    <title>ماركوس - الذكاء الاصطناعي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            direction: rtl;
+            background-color: #f5f5f5;
+            padding: 50px;
+        }
+        #prompt {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        #response {
+            margin-top: 20px;
+            white-space: pre-wrap;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
 </head>
 <body>
-  <h1>🤖 مرحباً بك في ماركوس AI</h1>
-  <input type="text" id="prompt" placeholder="اكتب سؤالك هنا...">
-  <button onclick="sendPrompt()">إرسال</button>
-  <div id="response">الرد سيظهر هنا...</div>
-  <script src="./script.js"></script>
+    <h1>مرحبًا بك في ماركوس AI</h1>
+    <textarea id="prompt" rows="5" placeholder="اكتب سؤالك هنا..."></textarea><br>
+    <button onclick="sendPrompt()">إرسال</button>
+    <div id="response"></div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
